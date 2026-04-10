@@ -2,7 +2,10 @@
 
 This document captures **everything we know about `order_details`** from **saved SQL / Metabase-style questions** used on this project. It is **not** a live `DESCRIBE` or Metabase **Table Metadata** export — validate names, types, and nullability in your warehouse before relying on it for production logic.
 
-Related note: [VoucherGram daily order_mode rollup](./learnings-vouchergram-daily-order-mode-rollup.md) (joins `order_details` with `payment_transaction`).
+Related notes:
+
+- [VoucherGram daily order_mode rollup](./learnings-vouchergram-daily-order-mode-rollup.md) — `order_details` + `payment_transaction`.
+- [Zillion Auth `user_details` join](./learnings-zillion-auth-user-details-join.md) — account creation / login context via `lcn_id` → `user_details.lcn` (**separate Metabase DB**).
 
 ---
 
