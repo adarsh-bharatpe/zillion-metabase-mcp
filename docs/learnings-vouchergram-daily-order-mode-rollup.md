@@ -20,6 +20,8 @@ The query is **not** executed by this repository; it is **reference documentatio
 
 ### `order_details` (line-level or detail rows per batch)
 
+Consolidated inferred column catalog: [learnings-order-details-schema.md](./learnings-order-details-schema.md).
+
 | Column / expression | Role in this query |
 |---------------------|-------------------|
 | `fk_batch_id` | Groups multiple detail rows into one **order batch**. |
